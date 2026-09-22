@@ -3,291 +3,562 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew West - Professional Profile</title>
+    <title>Andrew West | Information Systems &amp; Decision Sciences Portfolio</title>
+    <meta name="description" content="Professional portfolio and resume of Andrew West, Information Systems &amp; Decision Sciences student at Louisiana State University (LSU).">
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Modern Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
 
-    <!-- Header Section -->
-    <header>
-        <table width="100%" cellpadding="10" cellspacing="0" border="0">
-            <tr>
-                <td valign="top">
-                    <h1>Andrew West</h1>
-                    <p><strong>Information Systems &amp; Decision Sciences Student | Aspiring Systems Analyst &amp; Developer</strong></p>
-                    <p>E. J. Ourso College of Business &bull; Louisiana State University</p>
-                    <address>
-                        Baton Rouge, LA &bull;
-                        <a href="mailto:adwest0127@gmail.com">adwest0127@gmail.com</a> &bull;
-                        <a href="https://github.com" target="_blank">GitHub Profile</a> &bull;
-                        <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
-                    </address>
-                </td>
-            </tr>
-        </table>
+    <!-- Sticky Navigation Bar -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#top" class="nav-brand">
+                <div class="brand-badge">AW</div>
+                <span class="brand-name">Andrew West</span>
+            </a>
+            
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="resume.html" class="btn btn-secondary btn-sm">Resume</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+            </div>
+        </div>
     </header>
-
-    <hr>
-
-    <!-- Navigation Section -->
-    <nav aria-label="Main Navigation">
-        <p>
-            <strong>Navigation:</strong>
-            <a href="#about">About</a> |
-            <a href="#skills">Competencies &amp; Skills</a> |
-            <a href="#experience">Experience</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#education">Education</a> |
-            <a href="#contact">Contact</a> |
-            <a href="resume.html">Resume Page</a> |
-            <a href="project.html">Featured Project</a>
-        </p>
-    </nav>
-
-    <hr>
 
     <!-- Main Content -->
     <main>
-        <!-- Profile / About Section -->
-        <section id="about">
-            <h2>About Me (Profile)</h2>
-            <p>
-                Welcome to my personal profile page. I am an undergraduate student studying Information Systems &amp; 
-                Decision Sciences (ISDS) at the E. J. Ourso College of Business at Louisiana State University. 
-                I am focused on bridging technical problem solving with strategic business processes. My background 
-                encompasses software and systems foundations, business analytics, Python programming, agile pair programming, 
-                and web technologies.
-            </p>
-            <p>
-                My objective is to leverage technical skills in systems design, workflow automation, and data-driven 
-                decision making to solve modern operational challenges as a systems analyst, business analyst, or technology consultant.
-            </p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <!-- Recruiter Availability Badge -->
+                        <div class="recruiter-badge">
+                            <span class="pulse-dot"></span>
+                            <span>Seeking Summer 2027 Internships &amp; Entry-Level Analyst Roles</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            Solving business problems with <span class="highlight">intelligent systems</span> &amp; data.
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            Information Systems &amp; Decision Sciences Student at LSU E. J. Ourso College of Business.
+                        </p>
+
+                        <p class="hero-desc">
+                            Specializing in systems analysis, process automation, Python programming, and agile pair programming. Passionate about turning complex organizational data into clear operational advantages.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary btn-lg">Explore Projects &darr;</a>
+                            <a href="resume.html" class="btn btn-secondary btn-lg">View Full Resume</a>
+                            <a href="#contact" class="btn btn-outline btn-lg">Contact Me</a>
+                        </div>
+
+                        <div class="hero-social-links">
+                            <span>Connect:</span>
+                            <a href="mailto:adwest0127@gmail.com">Email</a> &bull;
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull;
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Quick Overview Card -->
+                    <aside class="hero-card">
+                        <div class="hero-avatar">AW</div>
+                        <h3>Andrew West</h3>
+                        <p class="hero-card-role">Aspiring Systems &amp; Business Analyst</p>
+                        
+                        <ul class="quick-stats-list">
+                            <li class="quick-stat-item">
+                                <span class="stat-label">University</span>
+                                <span class="stat-value">Louisiana State University (LSU)</span>
+                            </li>
+                            <li class="quick-stat-item">
+                                <span class="stat-label">Major</span>
+                                <span class="stat-value">B.S. in ISDS</span>
+                            </li>
+                            <li class="quick-stat-item">
+                                <span class="stat-label">Expected Graduation</span>
+                                <span class="stat-value">Spring 2027</span>
+                            </li>
+                            <li class="quick-stat-item">
+                                <span class="stat-label">Location</span>
+                                <span class="stat-value">Baton Rouge, LA</span>
+                            </li>
+                            <li class="quick-stat-item">
+                                <span class="stat-label">Core Tech</span>
+                                <span class="stat-value">Python, SQL, HTML5, Git</span>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <!-- About Me Section -->
+        <section id="about" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Executive Summary</span>
+                    <h2>About Me</h2>
+                    <p class="section-subtitle">Bridging technical execution with business strategy to design dependable solutions.</p>
+                </div>
 
-        <!-- Skills / Competencies Section -->
-        <section id="skills">
-            <h2>Skills &amp; Competencies</h2>
-            <table border="1" cellpadding="8" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th align="left">Category</th>
-                        <th align="left">Competencies &amp; Technologies</th>
-                        <th align="left">Proficiency / Context</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Programming &amp; Scripting</strong></td>
-                        <td>Python (Data structures, automation scripts, algorithms), HTML5, SQL</td>
-                        <td>Academic &amp; Project Experience</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Systems &amp; Methodologies</strong></td>
-                        <td>Information Systems Foundations, Systems Analysis &amp; Design, Agile Pair Programming, Vibe Coding</td>
-                        <td>Coursework &amp; Team Projects</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tools &amp; Version Control</strong></td>
-                        <td>Git, GitHub, GitHub Pages, Google Antigravity IDE, VS Code, Command Line (CLI)</td>
-                        <td>Daily Development Workflow</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Business &amp; Analytics</strong></td>
-                        <td>Requirements Elicitation, Business Process Modeling, Quantitative Analysis, Technical Documentation</td>
-                        <td>Business Education Curriculum</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Collaboration &amp; Soft Skills</strong></td>
-                        <td>Pair Programming (Driver &amp; Navigator roles), Technical Communication, Cross-Functional Teamwork</td>
-                        <td>Active Team Collaboration</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello and welcome to my professional portfolio. I am currently pursuing my Bachelor of Science in Information Systems &amp; Decision Sciences (ISDS) at the E. J. Ourso College of Business at Louisiana State University.
+                        </p>
+                        <p>
+                            In today's fast-moving technological landscape, successful organizations don't just write software—they clearly specify what systems must achieve, encode those specifications for repeatable performance, and critically evaluate outputs. My coursework and hands-on projects emphasize this exact managerial discipline: leveraging generative AI workflows, automated scripting, and modern system architectures to streamline operations.
+                        </p>
+                        <p>
+                            Whether collaborating in two-person agile pair programming teams (as both driver and navigator) or building custom analytical data pipelines in Python, I bring strong analytical rigor, clear communication, and an eagerness to deliver measurable value.
+                        </p>
+                    </div>
+
+                    <div class="highlights-box">
+                        <h3>Key Competencies at a Glance</h3>
+                        <p>Areas of focus that deliver direct value to prospective employers:</p>
+                        <ul class="pill-list">
+                            <li class="pill active">Systems Analysis</li>
+                            <li class="pill active">Process Automation</li>
+                            <li class="pill active">Python Programming</li>
+                            <li class="pill active">Agile Pair Programming</li>
+                            <li class="pill">Database Queries (SQL)</li>
+                            <li class="pill">Technical Documentation</li>
+                            <li class="pill">Vibe Coding &amp; AI Agents</li>
+                            <li class="pill">Git / GitHub Version Control</li>
+                            <li class="pill">Requirements Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <!-- Skills Section -->
+        <section id="skills" class="section-wrapper bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Skills &amp; Capabilities</span>
+                    <h2>Technical &amp; Professional Competencies</h2>
+                    <p class="section-subtitle">A balanced toolkit designed for systems analysis, software development, and technical collaboration.</p>
+                </div>
+
+                <div class="card-grid-3">
+                    <!-- Category 1 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#128187;</span>
+                            <h3>Programming &amp; Data</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">Python 3</li>
+                            <li class="skill-pill">SQL</li>
+                            <li class="skill-pill">HTML5</li>
+                            <li class="skill-pill">Data Structures</li>
+                            <li class="skill-pill">Algorithmic Logic</li>
+                            <li class="skill-pill">Data Aggregation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#9881;</span>
+                            <h3>Systems &amp; Methods</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">Systems Architecture</li>
+                            <li class="skill-pill">Agile Pair Programming</li>
+                            <li class="skill-pill">Vibe Coding Workflows</li>
+                            <li class="skill-pill">Requirements Elicitation</li>
+                            <li class="skill-pill">Process Flow Modeling</li>
+                            <li class="skill-pill">SDLC Foundations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#128295;</span>
+                            <h3>Tools &amp; Platforms</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">Git Version Control</li>
+                            <li class="skill-pill">GitHub &amp; GitHub Pages</li>
+                            <li class="skill-pill">Antigravity IDE</li>
+                            <li class="skill-pill">VS Code</li>
+                            <li class="skill-pill">Command Line / CLI</li>
+                            <li class="skill-pill">Claude Code Workflows</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#128202;</span>
+                            <h3>Business &amp; Analytics</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">Quantitative Analytics</li>
+                            <li class="skill-pill">Business Case Analysis</li>
+                            <li class="skill-pill">Technical Documentation</li>
+                            <li class="skill-pill">Decision Modeling</li>
+                            <li class="skill-pill">Spreadsheet Modeling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#129309;</span>
+                            <h3>Collaboration &amp; Leadership</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">Driver &amp; Navigator Roles</li>
+                            <li class="skill-pill">Cross-Functional Communication</li>
+                            <li class="skill-pill">Peer Code Review</li>
+                            <li class="skill-pill">Critical Thinking</li>
+                            <li class="skill-pill">Problem Decomposition</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <span class="skill-card-icon">&#127942;</span>
+                            <h3>Academic Focus</h3>
+                        </div>
+                        <ul class="skill-pills">
+                            <li class="skill-pill">IS Foundations (ISDS 3100)</li>
+                            <li class="skill-pill">Information Architecture</li>
+                            <li class="skill-pill">Telecommunications</li>
+                            <li class="skill-pill">Enterprise Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Experience Section -->
-        <section id="experience">
-            <h2>Experience (Jobs Held &amp; Roles)</h2>
-            
-            <article>
-                <h3>Information Systems Foundations - Team Project Member</h3>
-                <p><em>SDEIS Department, E. J. Ourso College of Business &bull; Fall 2026</em></p>
-                <ul>
-                    <li>Collaborate in two-person agile pair programming teams alternating between driver and navigator roles.</li>
-                    <li>Design and deploy personal and team web applications hosted publicly via GitHub Pages.</li>
-                    <li>Utilize generative AI agent workflows and prompt engineering to architect, inspect, and maintain clean web code.</li>
-                    <li>Conduct peer code reviews, Git version tracking, and repository management.</li>
-                </ul>
-            </article>
+        <section id="experience" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Work History</span>
+                    <h2>Experience &amp; Roles</h2>
+                    <p class="section-subtitle">Practical applications in software development, team projects, and academic automation.</p>
+                </div>
 
-            <article>
-                <h3>Technology &amp; Academic Projects Assistant</h3>
-                <p><em>Baton Rouge, LA &bull; 2024 &ndash; Present</em></p>
-                <ul>
-                    <li>Developed automated Python programs to process data collections, perform statistical aggregation, and generate grade and performance reports.</li>
-                    <li>Analyzed business case studies focusing on enterprise information architecture, software adoption, and cloud infrastructure.</li>
-                    <li>Documented technical specifications, user requirements, and workflow diagrams for academic deliverables.</li>
-                </ul>
-            </article>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <h3 class="timeline-title">Agile Developer &amp; Systems Navigator (Team Project)</h3>
+                                <span class="timeline-badge">Fall 2026 &ndash; Present</span>
+                            </div>
+                            <p class="timeline-org">SDEIS Department &bull; E. J. Ourso College of Business &bull; LSU</p>
+                            <ul class="timeline-bullets">
+                                <li>Practice paired programming in alternating <strong>Driver</strong> (code synthesis, execution) and <strong>Navigator</strong> (architecture, error spotting, code review) modalities.</li>
+                                <li>Architect and vibe-code personal and team web applications adhering to strict professional standards, semantic HTML structure, and responsive design systems.</li>
+                                <li>Manage code versioning, branch merges, and public deployments directly using Git and GitHub Pages.</li>
+                                <li>Formulate, evaluate, and test autonomous agent skills to automate multi-step organizational workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-meta">
+                                <h3 class="timeline-title">Technology &amp; Academic Projects Assistant</h3>
+                                <span class="timeline-badge">2024 &ndash; Present</span>
+                            </div>
+                            <p class="timeline-org">Information Systems &amp; Decision Sciences &bull; Baton Rouge, LA</p>
+                            <ul class="timeline-bullets">
+                                <li>Developed automated Python programs to parse data collections, compute statistical metrics (averages, distributions, extrema), and generate formatted summary reports.</li>
+                                <li>Conducted detailed analytical evaluations of enterprise systems, IT infrastructure options, and software adoption roadmaps.</li>
+                                <li>Created structured technical specifications, flow diagrams, and user-facing guides for multi-member project teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section-wrapper bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Portfolio Highlights</span>
+                    <h2>Featured Projects</h2>
+                    <p class="section-subtitle">Real-world systems projects demonstrating architecture, coding, and problem solving.</p>
+                </div>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            
-            <article>
-                <h3>1. Personal Hybrid Website &amp; Portfolio</h3>
-                <p><strong>Technologies:</strong> Raw HTML, GitHub, GitHub Pages, Antigravity IDE</p>
-                <p>
-                    A clean, recruiter-focused personal website built using a hybrid architectural layout. 
-                    Features a single-page core overview with modular navigation to extended resume and project pages.
-                </p>
-                <p>
-                    <a href="project.html">View Detailed Project Page &rarr;</a>
-                </p>
-            </article>
+                <div class="card-grid-3">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">Web Development &amp; Cloud Hosting</span>
+                            <h3 class="project-title">Personal Hybrid Portfolio Website</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                A recruiter-targeted personal website built with a modern hybrid layout. Combines single-page high-level navigation with modular expansion pages for deep-dive resume credentials and projects.
+                            </p>
+                            <ul class="project-tech">
+                                <li class="tech-tag">HTML5</li>
+                                <li class="tech-tag">CSS3 (Vanilla)</li>
+                                <li class="tech-tag">GitHub Pages</li>
+                                <li class="tech-tag">Responsive UI</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="project.html" class="btn btn-outline btn-sm">Explore Project &rarr;</a>
+                            <a href="https://github.com" target="_blank" class="btn btn-secondary btn-sm" rel="noopener noreferrer">Code Repo</a>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>2. Python Data Processing &amp; Analysis Suite</h3>
-                <p><strong>Technologies:</strong> Python 3, File I/O, Data Structures</p>
-                <p>
-                    An algorithmic data analysis tool designed to ingest datasets, compute descriptive statistics (mean, min, max, sum), 
-                    and validate structured data records against business rules.
-                </p>
-            </article>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">Python &amp; Data Engineering</span>
+                            <h3 class="project-title">Algorithmic Data Aggregator &amp; Validator</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                A modular Python program implementing iterative control structures, numerical processing, and data verification against organizational benchmarks, including automated error logging.
+                            </p>
+                            <ul class="project-tech">
+                                <li class="tech-tag">Python 3</li>
+                                <li class="tech-tag">Algorithms</li>
+                                <li class="tech-tag">Data Validation</li>
+                                <li class="tech-tag">Unit Testing</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="project.html" class="btn btn-outline btn-sm">View Case Study &rarr;</a>
+                            <span class="tech-tag">Completed</span>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>3. Agent Skill Development for Autonomous AI</h3>
-                <p><strong>Technologies:</strong> Markdown, AI Agent Workflows, Claude Code / Antigravity</p>
-                <p>
-                    Designing and testing reusable, self-triggering agent skills packaged with structured instructions, 
-                    reference templates, and deterministic testing protocols for automating repeatable tasks.
-                </p>
-            </article>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-category">Autonomous AI &amp; Process Automation</span>
+                            <h3 class="project-title">Self-Triggering Agent Skill Development</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-desc">
+                                Engineered a packaged agent skill with YAML frontmatter, deterministic execution protocols, and reference assets for Claude Code and Antigravity, automating repeatable administrative procedures.
+                            </p>
+                            <ul class="project-tech">
+                                <li class="tech-tag">Agent Skills</li>
+                                <li class="tech-tag">SKILL.md</li>
+                                <li class="tech-tag">Workflow Automation</li>
+                                <li class="tech-tag">Claude Code</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <a href="project.html" class="btn btn-outline btn-sm">View Architecture &rarr;</a>
+                            <span class="tech-tag">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <hr>
 
         <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <table border="1" cellpadding="8" cellspacing="0" width="100%">
-                <tr>
-                    <td valign="top" width="70%">
-                        <h3>Bachelor of Science in Information Systems &amp; Decision Sciences (ISDS)</h3>
-                        <p><strong>Louisiana State University (LSU)</strong> &ndash; E. J. Ourso College of Business</p>
-                        <p>Baton Rouge, Louisiana</p>
-                        <p><strong>Relevant Coursework:</strong></p>
-                        <ul>
-                            <li>ISDS 3100: Information Systems Foundations</li>
-                            <li>Business Systems Development &amp; Algorithmic Logic</li>
-                            <li>Database Management &amp; Information Architecture</li>
-                            <li>Business Data Communications &amp; Networking</li>
-                        </ul>
-                    </td>
-                    <td valign="top" width="30%">
-                        <p><strong>Expected Graduation:</strong> 2027</p>
-                        <p><strong>Status:</strong> Active Undergraduate</p>
-                    </td>
-                </tr>
-            </table>
+        <section id="education" class="section-wrapper">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academic Background</span>
+                    <h2>Education &amp; Coursework</h2>
+                    <p class="section-subtitle">Rigorous business school foundations paired with technical systems training.</p>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-main">
+                        <span class="edu-meta-pill">Bachelor of Science Degree</span>
+                        <h3>Information Systems &amp; Decision Sciences (ISDS)</h3>
+                        <p class="edu-school">Louisiana State University (LSU)</p>
+                        <p class="edu-location">E. J. Ourso College of Business &bull; Baton Rouge, LA</p>
+                        <p><strong>Expected Graduation:</strong> May 2027</p>
+                        <p><strong>Academic Focus:</strong> Systems Analysis, Enterprise Systems, Business Data Communications, and Algorithmic Automation.</p>
+                    </div>
+
+                    <div class="edu-coursework">
+                        <h3>Key Coursework</h3>
+                        <div class="course-grid">
+                            <div class="course-item">
+                                <strong>ISDS 3100</strong><br>
+                                Information Systems Foundations
+                            </div>
+                            <div class="course-item">
+                                <strong>ISDS 3107</strong><br>
+                                Business Systems Development
+                            </div>
+                            <div class="course-item">
+                                <strong>Database Mgmt</strong><br>
+                                Relational Data &amp; SQL
+                            </div>
+                            <div class="course-item">
+                                <strong>Data Networks</strong><br>
+                                Telecommunications &amp; Cloud
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Resume Section Link -->
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>
-                For a comprehensive breakdown of my academic credentials, professional experience, honors, and certifications, 
-                please visit my dedicated resume page:
-            </p>
-            <p>
-                <a href="resume.html"><strong>&rarr; Open Full Resume (resume.html)</strong></a>
-            </p>
+        <!-- Dedicated Resume Banner -->
+        <section class="section-wrapper" style="padding-top: 0;">
+            <div class="container">
+                <div class="resume-banner">
+                    <div class="resume-banner-content">
+                        <h2>Looking for my complete resume?</h2>
+                        <p>Review my detailed academic credentials, professional experience history, awards, and technical skill certifications on my dedicated resume page.</p>
+                    </div>
+                    <div>
+                        <a href="resume.html" class="btn btn-lg">View Full Resume (resume.html) &rarr;</a>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <hr>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>I welcome opportunities to connect regarding internships, analyst positions, or academic collaborations.</p>
-            
-            <table border="0" cellpadding="6" cellspacing="0">
-                <tr>
-                    <td><strong>Name:</strong></td>
-                    <td>Andrew West</td>
-                </tr>
-                <tr>
-                    <td><strong>Email:</strong></td>
-                    <td><a href="mailto:adwest0127@gmail.com">adwest0127@gmail.com</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Location:</strong></td>
-                    <td>Baton Rouge, LA</td>
-                </tr>
-                <tr>
-                    <td><strong>University:</strong></td>
-                    <td>Louisiana State University (LSU)</td>
-                </tr>
-                <tr>
-                    <td><strong>LinkedIn:</strong></td>
-                    <td><a href="https://linkedin.com" target="_blank">Connect on LinkedIn</a></td>
-                </tr>
-                <tr>
-                    <td><strong>GitHub:</strong></td>
-                    <td><a href="https://github.com" target="_blank">View GitHub Repositories</a></td>
-                </tr>
-            </table>
+        <section id="contact" class="section-wrapper bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2>Contact Information &amp; Inquiries</h2>
+                    <p class="section-subtitle">Interested in discussing an internship, analyst opportunity, or project collaboration? Reach out directly.</p>
+                </div>
 
-            <br>
+                <div class="contact-grid">
+                    <!-- Direct Info Card -->
+                    <div class="contact-info-card">
+                        <h3>Direct Channels</h3>
+                        <p>I actively monitor email and LinkedIn and will promptly respond to recruiting inquiries.</p>
 
-            <h3>Send a Message</h3>
-            <form action="mailto:adwest0127@gmail.com" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend><strong>Inquiry Form</strong></legend>
-                    <p>
-                        <label for="name">Your Name:</label><br>
-                        <input type="text" id="name" name="name" size="40" required>
-                    </p>
-                    <p>
-                        <label for="sender-email">Your Email:</label><br>
-                        <input type="email" id="sender-email" name="sender-email" size="40" required>
-                    </p>
-                    <p>
-                        <label for="subject">Subject:</label><br>
-                        <input type="text" id="subject" name="subject" size="40" required>
-                    </p>
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="6" cols="42" required></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">Submit Message</button>
-                        <button type="reset">Clear Form</button>
-                    </p>
-                </fieldset>
-            </form>
+                        <ul class="contact-links-list">
+                            <li class="contact-link-item">
+                                <div class="contact-icon">&#9993;</div>
+                                <div>
+                                    <div class="contact-label">Email Address</div>
+                                    <div class="contact-value"><a href="mailto:adwest0127@gmail.com">adwest0127@gmail.com</a></div>
+                                </div>
+                            </li>
+                            <li class="contact-link-item">
+                                <div class="contact-icon">&#128188;</div>
+                                <div>
+                                    <div class="contact-label">LinkedIn Profile</div>
+                                    <div class="contact-value"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div>
+                                </div>
+                            </li>
+                            <li class="contact-link-item">
+                                <div class="contact-icon">&#128187;</div>
+                                <div>
+                                    <div class="contact-label">GitHub Profile</div>
+                                    <div class="contact-value"><a href="https://github.com" target="_blank" rel="noopener noreferrer">View Repositories</a></div>
+                                </div>
+                            </li>
+                            <li class="contact-link-item">
+                                <div class="contact-icon">&#128205;</div>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">Baton Rouge, Louisiana (LSU Campus)</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Modern Contact Form -->
+                    <div class="contact-form-card">
+                        <form action="mailto:adwest0127@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name" class="form-label">Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g., Sarah Jenkins" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email" class="form-label">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" class="form-control" placeholder="name@company.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-organization" class="form-label">Company / Organization</label>
+                                <input type="text" id="contact-organization" name="organization" class="form-control" placeholder="e.g., Enterprise Tech Partners">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Internship Opportunity / Inquiry" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message *</label>
+                                <textarea id="contact-message" name="message" class="form-control" placeholder="Share details about the role or project..." required></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message &rarr;</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <hr>
-
-    <!-- Footer Section -->
-    <footer>
-        <p align="center">
-            &copy; 2026 Andrew West. All rights reserved. &bull; 
-            <a href="#top">Back to top</a>
-        </p>
-        <p align="center">
-            <small>Built with pure raw HTML &bull; Pair-programming project for ISDS 3100 &bull; E. J. Ourso College of Business, LSU</small>
-        </p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span>Andrew West</span>
+                    <p style="font-size: 0.85rem; color: #64748b; margin-top: 0.25rem;">Information Systems &amp; Decision Sciences &bull; LSU</p>
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Featured Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Andrew West. Hosted via GitHub Pages. E. J. Ourso College of Business, LSU.</p>
+                <p><a href="#top">Back to top &uarr;</a></p>
+            </div>
+        </div>
     </footer>
 
 </body>
